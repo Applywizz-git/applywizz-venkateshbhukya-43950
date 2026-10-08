@@ -66,6 +66,13 @@ export default function Experience() {
                           <p className="mt-2 font-space text-[12px] font-black tracking-[0.08em] break-words text-accent uppercase sm:tracking-[0.16em] md:text-[14px] md:tracking-[0.22em]">
                             {item.company}
                           </p>
+                          {(item.clientDomain || item.projectTitle) && (
+                            <div className="mt-1 flex flex-wrap gap-x-2 font-space text-[11px] text-white/70">
+                              {item.clientDomain && <span><strong className="text-white/40">Client Domain:</strong> {item.clientDomain}</span>}
+                              {item.clientDomain && item.projectTitle && <span>|</span>}
+                              {item.projectTitle && <span><strong className="text-white/40">Project:</strong> {item.projectTitle}</span>}
+                            </div>
+                          )}
                         </div>
                         <p className="font-fancy text-xs tracking-[0.2em] text-white/40">0{index + 1}</p>
                       </div>

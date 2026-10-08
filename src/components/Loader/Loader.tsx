@@ -98,7 +98,7 @@ export default function Loader() {
           <div className="loader-ring loader-spin-x absolute inset-4 rounded-full border border-[#bf00ff]/70 shadow-[0_0_24px_rgba(191,0,255,0.35)]" />
           <div className="loader-ring loader-spin-z absolute inset-10 rounded-full border border-dashed border-[#00ffcc]/50" />
           <div className="loader-core absolute inset-0 m-auto flex h-20 w-20 items-center justify-center rounded-[1.4rem] border border-[#00ffcc]/40 bg-[#05050a]/85 sm:h-28 sm:w-28 sm:rounded-[1.6rem]">
-            <span className="font-fancy text-2xl tracking-[0.14em] text-[#00ffcc] sm:text-3xl sm:tracking-[0.18em]">SP</span>
+            <span className="font-fancy text-2xl tracking-[0.14em] text-[#00ffcc] sm:text-3xl sm:tracking-[0.18em]">VB</span>
           </div>
         </div>
 

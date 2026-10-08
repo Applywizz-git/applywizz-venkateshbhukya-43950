@@ -154,10 +154,10 @@ export default function Navigation() {
             </span>
             <span className="flex min-w-0 flex-col">
               <span className="truncate font-fancy text-[11px] leading-none font-bold tracking-[0.12em] text-white drop-shadow-[0_0_10px_#00F9FF] min-[380px]:text-xs sm:text-sm sm:tracking-[0.16em] lg:text-base lg:tracking-[0.18em]">
-                SAI <span className="text-cyanx">PATANGE.</span>
+                {profile.firstName.toUpperCase()} <span className="text-cyanx">{profile.lastName.toUpperCase()}.</span>
               </span>
               <span className="mt-1 inline-flex w-fit border-l-2 border-cyanx bg-[rgba(0,249,255,0.1)] px-1.5 py-0.5 font-raj text-[9px] font-semibold tracking-wider text-cyanx uppercase sm:text-[10px]">
-                BI Analyst
+                {profile.shortTitle}
               </span>
             </span>
           </a>
@@ -291,7 +291,7 @@ function Mark() {
       </defs>
       <rect x="4" y="4" width="56" height="56" rx="14" fill="#070b16" stroke="url(#sp)" />
       <text x="32" y="40" textAnchor="middle" fontSize="20" fontFamily="Orbitron, sans-serif" fill="url(#sp)">
-        SP
+        VB
       </text>
     </svg>
   );

@@ -14,14 +14,15 @@ export const profile = {
   descriptor: "Data Engineering · Cloud ETL · Analytics",
   heroRole: "Data Engineer",
   heroCopy:
-    "Data Engineer with 5+ years of experience designing cloud data pipelines, ETL/ELT systems, and analytics platforms across banking, healthcare, and retail environments.",
+    "Data Engineer with 5+ years of experience developing cloud data pipelines and platforms across banking, healthcare, and retail data environments, supporting ETL/ELT, Big Data processing, analytics, and Business Intelligence workloads.",
+  linkedin: "#",
 };
 
 export const aboutBlocks = [
-  "Data Engineer with 5+ years of experience developing cloud data pipelines and platforms across banking, healthcare, and retail data environments, supporting ETL/ELT, Big Data processing, analytics, and business intelligence workloads.",
+  "Data Engineer with 5+ years of experience developing cloud data pipelines and platforms across banking, healthcare, and retail data environments, supporting ETL/ELT, Big Data processing, analytics, and Business Intelligence workloads.",
   "Builds batch and streaming data solutions using Python, SQL, PySpark, Apache Spark, Kafka, Airflow, and dbt, with hands-on experience across AWS, Azure, GCP, Snowflake, Databricks, BigQuery, Redshift, and Synapse Analytics.",
-  "Strengthens data operations through dimensional modeling, incremental processing, query optimization, data quality, reconciliation, governance, and DataOps to reliably process 1M+ daily records for reporting and analytics.",
-  "Connects engineering with business needs by collaborating with database, risk, healthcare, retail, compliance, and BI teams to deliver governed datasets for financial reporting, healthcare analytics, and operational decision-making.",
+  "Strengthens data operations through dimensional modeling, incremental processing, query optimization, data quality, reconciliation, governance, and DataOps, reliably processing 1M+ daily records for analytics and reporting.",
+  "Connects Data Engineering with business needs, collaborating with database, risk, healthcare, retail, compliance, and Business Intelligence teams to deliver governed datasets for financial reporting, healthcare analytics, retail insights, and decisions.",
 ];
 
 export const terminalLines = [
@@ -29,7 +30,7 @@ export const terminalLines = [
   { label: "loading_persona", value: "DATA_ENGINEER" },
   { label: "status", value: "ONLINE" },
   { label: "location", value: "COHOES_NY" },
-  { label: "objective", value: "BUILD_GOVERNED_DATA_PIPELINES_" },
+  { label: "objective", value: "BUILD_GOVERNED_DATA_PIPELINES" },
 ];
 
 export const identityCards = [
@@ -61,6 +62,8 @@ export type ExperienceItem = {
   dates: string;
   location: string;
   mark: string;
+  clientDomain?: string;
+  projectTitle?: string;
   points: string[];
 };
 
@@ -108,6 +111,8 @@ export const experienceData: ExperienceItem[] = [
     dates: "Jan 2020 – Apr 2022",
     location: "India | Remote",
     mark: "AT",
+    clientDomain: "Retail Data / Analytics",
+    projectTitle: "Retail Data Integration & Analytics Platform",
     points: [
       "Built Python and SQL ETL pipelines that consolidated sales, product, inventory, and order data into BigQuery, reducing manual data preparation by 25% for retail analytics and reporting teams.",
       "Migrated approximately 700 GB of historical sales and product data from relational and file-based sources into GCP, validating source-to-target totals and improving access to historical retail datasets.",
@@ -130,7 +135,7 @@ export type SkillGroup = {
 export const skillsData: SkillGroup[] = [
   {
     id: "programming",
-    domain: "Programming & Data Engineering",
+    domain: "Programming & Database Engineering",
     items: [
       "Python",
       "SQL",
@@ -138,8 +143,12 @@ export const skillsData: SkillGroup[] = [
       "Scala",
       "Pandas",
       "Bash",
-      "REST APIs",
+      "PostgreSQL",
+      "SQL Server",
       "Stored Procedures",
+      "Query Optimization",
+      "Performance Tuning",
+      "REST APIs",
     ],
   },
   {
@@ -148,12 +157,14 @@ export const skillsData: SkillGroup[] = [
     items: [
       "ETL/ELT",
       "Data Pipelines",
+      "Data Integration",
+      "Data Transformation",
+      "Batch & Streaming Processing",
       "Incremental Loads",
-      "CDC",
+      "Change Data Capture (CDC)",
+      "Source-to-Target Mapping",
       "Schema Evolution",
       "Data Migration",
-      "Source-to-Target Mapping",
-      "Kafka",
     ],
   },
   {
@@ -162,12 +173,13 @@ export const skillsData: SkillGroup[] = [
     items: [
       "Apache Spark",
       "PySpark",
+      "Apache Kafka",
       "Hadoop",
       "HDFS",
       "Hive",
+      "Distributed Processing",
       "Partitioning",
       "Parallel Processing",
-      "Distributed Systems",
     ],
   },
   {
@@ -189,6 +201,7 @@ export const skillsData: SkillGroup[] = [
     domain: "Data Warehousing & Modeling",
     items: [
       "Data Warehousing",
+      "Data Lakes",
       "Lakehouse Architecture",
       "Dimensional Modeling",
       "Star Schema",
@@ -208,14 +221,19 @@ export const skillsData: SkillGroup[] = [
       "GitHub",
       "Jenkins",
       "Azure DevOps",
+      "CI/CD",
       "Docker",
+      "Kubernetes",
       "Terraform",
+      "Pipeline Monitoring",
+      "Release Automation",
     ],
   },
   {
     id: "quality",
     domain: "Data Quality & Governance",
     items: [
+      "Data Quality",
       "Data Validation",
       "Schema Validation",
       "Data Reconciliation",
@@ -227,17 +245,29 @@ export const skillsData: SkillGroup[] = [
     ],
   },
   {
+    id: "security",
+    domain: "Security & Compliance",
+    items: [
+      "IAM",
+      "RBAC",
+      "Data Encryption",
+      "Access Controls",
+      "Data Privacy",
+      "HIPAA",
+      "GDPR",
+      "CCPA",
+    ],
+  },
+  {
     id: "analytics",
-    domain: "Analytics & BI",
+    domain: "Analytics & Business Intelligence",
     items: [
       "Power BI",
       "Tableau",
       "Business Intelligence",
+      "Data Analytics",
       "Dashboard Development",
       "Reporting",
-      "Data Analytics",
-      "Data Visualization",
-      "KPI Monitoring",
     ],
   },
 ];
@@ -260,11 +290,11 @@ export const projectsData: ProjectItem[] = [
     category: "Consulting",
     technologies: ["Python", "SQL", "PySpark", "AWS Glue", "Redshift"],
     summary:
-      "Created an audit-trail process for banking datasets to capture source counts, load status, and reconciliation outcomes for financial reporting teams.",
+      "Devised an audit-trail process capturing source counts, load status, and reconciliation results for financial datasets, reducing manual audit preparation by 9% across scheduled reporting cycles.",
     details: [
       "Devised an audit-trail process capturing source counts, load status, and reconciliation results for financial datasets, reducing manual audit preparation by 9% across scheduled reporting cycles.",
       "Created SQL-driven exception views that grouped unmatched transaction records by failure reason, helping operations teams resolve recurring data issues 19% faster without searching raw pipeline logs.",
-      "Enabled historical reprocessing of corrected financial records through parameterized Python routines, recovering affected reporting data within 2 hours instead of requiring full dataset reloads.",
+      "Enabled historical reprocessing of corrected financial records through parameterized Python routines, recovering affected reporting data within 2 hours instead of requiring complete dataset reloads.",
     ],
   },
   {
@@ -274,11 +304,11 @@ export const projectsData: ProjectItem[] = [
     category: "Healthcare",
     technologies: ["PySpark", "SQL", "Synapse", "Azure Data Factory"],
     summary:
-      "Consolidated inconsistent provider and plan reference values into governed lookup structures to reduce downstream mapping exceptions across healthcare reporting datasets.",
+      "Consolidated inconsistent provider and plan reference values into governed lookup structures using PySpark and SQL, reducing downstream mapping exceptions by 17% across healthcare reporting datasets.",
     details: [
       "Consolidated inconsistent provider and plan reference values into governed lookup structures using PySpark and SQL, reducing downstream mapping exceptions by 17% across healthcare reporting datasets.",
       "Applied effective-date handling for changing member and provider reference attributes, improving historical reporting consistency across 4 analytical subject areas without overwriting prior values.",
-      "Published reusable reference datasets through Synapse for analytics and BI consumers, eliminating approximately 15% of duplicate transformation logic maintained across downstream reporting workflows.",
+      "Published reusable reference datasets through Synapse for analytics and Business Intelligence consumers, eliminating approximately 15% of duplicate transformation logic maintained across downstream reporting workflows.",
     ],
   },
   {
@@ -288,7 +318,7 @@ export const projectsData: ProjectItem[] = [
     category: "Consulting",
     technologies: ["Python", "SQL", "Kafka", "Airflow", "BigQuery"],
     summary:
-      "Formulated a configuration-driven ingestion framework for recurring retail source patterns to reduce source-specific code changes and support faster onboarding.",
+      "Formulated configuration-driven ingestion logic in Python to support 4 recurring retail source patterns, reducing source-specific code changes when new sales and inventory datasets were introduced.",
     details: [
       "Formulated configuration-driven ingestion logic in Python to support 4 recurring retail source patterns, reducing source-specific code changes when new sales and inventory datasets were introduced.",
       "Normalized product, store, and order field definitions through reusable SQL mapping templates, decreasing transformation-related defects by 11% during QA and downstream reporting validation.",
@@ -352,14 +382,8 @@ export const certificationsData: CertificationItem[] = [
     kind: "Certificate",
   },
   {
-    id: "gcp",
+    id: "gcp-specialization",
     title: "Data Engineering, Big Data, and Machine Learning on GCP Specialization",
-    issuer: "Coursera",
-    kind: "Certificate",
-  },
-  {
-    id: "warehouse",
-    title: "Data Warehousing for Business Intelligence Specialization",
     issuer: "Coursera",
     kind: "Certificate",
   },
@@ -391,3 +415,4 @@ export const loaderPhases = [
   "RESONANCE DETECTED",
   "ENTERING DIMENSION",
 ];
+
