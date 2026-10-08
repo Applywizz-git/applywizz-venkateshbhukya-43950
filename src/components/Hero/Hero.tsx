@@ -67,14 +67,9 @@ export default function Hero() {
                 Venkatesh
               </span>
             </span>
-            <span className="block overflow-hidden">
-              <span data-hero="line" className="block">
-                Bhukya
-              </span>
-            </span>
             <span className="block overflow-hidden text-accent">
               <span data-hero="line" className="block">
-                Engineer.
+                Bhukya.
               </span>
             </span>
           </h1>
